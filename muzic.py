@@ -50,22 +50,6 @@ def start(client, message):
         )
     )
     
- @bot.on_message(filters.command(['help']))
-def help(client, message):
-    Lasi = f'Respect to Dev & Give credits When you edit it,\n Dont foget to Give STAR to Original Repo.'
-    message.reply_text(
-        text=Lasi, 
-        quote=False,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                 [
-                  InlineKeyboardButton('Souce code', url='https://github.com/SLdevilX/MUZIC'),
-                   InlineKeyboardButton('Howto Deploy💡', url='https://lasiya.ml'),
-                ]
-            ]
-        )
-    )
-
 @bot.on_message(filters.command(['song']))
 def song(client, message):
     query = ''
