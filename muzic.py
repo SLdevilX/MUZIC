@@ -43,16 +43,6 @@ async def help(client, message):
 
 
 
-
-
-@bot.on_message(filters.command(['']))
-def help(client, message):
-    Lasi = f''
-    message.reply_text(
-        text=Lasi, 
-        quote=False,
-       
-    
     @bot.on_message(filters.command(['start']))
 def start(client, message):
     Sldevilx = f'╭─━━━━━━━━━━━━━━━━━─╮\n\n               🤟 Hey @{message.from_user.username} [😏🎧](https://telegra.ph/file/534ba62f07c64c5fb25ef.jpg)\n         Welcome to X-Troid MUZIC \n         To use me Type with this format👇 \n               /song song name\n\n╰─━━━━━━━━━━━━━━━━━─╯'
