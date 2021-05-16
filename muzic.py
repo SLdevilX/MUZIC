@@ -22,13 +22,13 @@ bot = Client(
 
 ## Commands --------------------------------
 
-@bot.on_message(filters.command(['help']))
-def help(client, message):
-    Lasi = f'╭─━━━━━━━━━━━━━━━━━─╮\n\n       Respect to Dev\n               &\n        Give credits When you edit it,\n       **Dont foget to Give STAR to  Repo.**\n\n╰─━━━━━━━━━━━━━━━━━─╯'
-    message.reply_text(
-        text=Lasi, 
-        quote=False,
-        reply_markup=InlineKeyboardMarkup(
+@TGraph.on_message(filters.command("help"))
+async def help(client, message):
+    await message.reply_text(
+        text=f"╭─━━━━━━━━━━━━━━━━━─╮\n\n       Respect to Dev\n               &\n        Give credits When you edit it,\n       **Dont foget to Give STAR to  Repo.**\n\n╰─━━━━━━━━━━━━━━━━━─╯",
+
+     disable_web_page_preview=True
+         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton('Souce code', url='https://github.com/SLdevilX/MUZIC'),
@@ -41,6 +41,17 @@ def help(client, message):
         )
     )
 
+
+
+
+
+@bot.on_message(filters.command(['']))
+def help(client, message):
+    Lasi = f''
+    message.reply_text(
+        text=Lasi, 
+        quote=False,
+       
     
     @bot.on_message(filters.command(['start']))
 def start(client, message):
