@@ -27,7 +27,7 @@ def help(client, message):
     Lasi = f'╭─━━━━━━━━━━━━━━━━━─╮\n\n       Respect to Dev\n               &\n        Give credits When you edit it,\n       **Dont foget to Give STAR to  Repo.**\n\n╰─━━━━━━━━━━━━━━━━━─╯'
     message.reply_text(
         text=Lasi, 
-        quote=true,
+        quote=False,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
