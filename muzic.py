@@ -29,9 +29,9 @@ def time_to_seconds(time):
 ## Commands --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    darkprince = f'╭─━━━━━━━━━━━━━━━━━━━━─╮\n       🤟 Hey @{message.from_user.username} [😏🎧](https://telegra.ph/file/534ba62f07c64c5fb25ef.jpg)\n      Welcome to X-Troid MUZIC \n To use me Type with this format👇 \n           /song song name:\n╰─━━━━━━━━━━━━━━━━━━━━─╯'
+    Sldevilx = f'╭─━━━━━━━━━━━━━━━━━─╮\n\n       🤟 Hey @{message.from_user.username} [😏🎧](https://telegra.ph/file/534ba62f07c64c5fb25ef.jpg)\n      Welcome to X-Troid MUZIC \n To use me Type with this format👇 \n           /song song name\n\n╰─━━━━━━━━━━━━━━━━━─╯'
     message.reply_text(
-        text=darkprince, 
+        text=Sldevilx, 
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -40,11 +40,29 @@ def start(client, message):
                     InlineKeyboardButton('About Owner💡', url='https://lasiya.ml'),
                 ],
                 [
-                    InlineKeyboardButton('Main Group 🇱🇰', url='http://t.me/Danuma01'),
-                        InlineKeyboardButton('Bot Channel 🏅', url='http://t.me/Dbotai'),
+                    InlineKeyboardButton('Main Group 🇱🇰', url='http://t.me/Danuma01')
+                ],
+                [
+                    InlineKeyboardButton('Bot Channel 🏅', url='http://t.me/danumabots')
                  ]
             ]
             
+        )
+    )
+    
+ @bot.on_message(filters.command(['help']))
+def help(client, message):
+    Lasi = f'Respect to Dev & Give credits When you edit it,\n Dont foget to Give STAR to Original Repo.'
+    message.reply_text(
+        text=Sldevilx, 
+        quote=False,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                 [
+                  InlineKeyboardButton('Souce code', url='https://github.com/SLdevilX/MUZIC'),
+                   InlineKeyboardButton('Howto Deploy💡', url='https://lasiya.ml'),
+                ]
+            ]
         )
     )
 
