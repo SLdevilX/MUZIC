@@ -28,19 +28,8 @@ async def help(client, message):
         text=f"╭─━━━━━━━━━━━━━━━━━─╮\n\n       Respect to Dev\n               &\n        Give credits When you edit it,\n       **Dont foget to Give STAR to  Repo.**\n\n╰─━━━━━━━━━━━━━━━━━─╯",
 
      disable_web_page_preview=True
-         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('Souce code', url='https://github.com/SLdevilX/MUZIC'),
-                    ],
-                [
-                    InlineKeyboardButton('Howto Deploy💡', url='https://lasiya.ml'),
-                ]
-            ]
-            
-        )
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Souce code", url=f"https://github.com/SLdevilX/MUZIC"), InlineKeyboardButton(text="Howto Deploy💡", url=f"https://lasiya.ml")]])
     )
-
 
 
     @bot.on_message(filters.command(['start']))
