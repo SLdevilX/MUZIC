@@ -1,4 +1,4 @@
 class Config:
-    BOT_TOKEN = "" # 🌚 get it from @botfather (telegram) by sending /newbot command.
-    API_ID = "" # 🌚 Same as APP_ID. Get it from my.telegram.org.
-    API_HASH = "" # 🌚 Get it from my.telegram.org.
+    BOT_TOKEN = os.getenv("BOT_TOKEN")  # from @botfather
+    API_ID = int(os.getenv("API_ID"))  # from https://my.telegram.org/apps
+    API_HASH = os.getenv("API_HASH")  # from https://my.telegram.org/apps
